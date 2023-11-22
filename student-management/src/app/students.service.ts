@@ -20,4 +20,11 @@ export class StudentsService {
     return this.http.get(this.url);
 
   }
+
+  //method to save data
+  saveStudentData( data:any ){
+    console.log(data)
+
+    return this.http.post(this.url, data);
+  }
 }

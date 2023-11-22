@@ -10,8 +10,10 @@ import { ListStudentComponent } from './components/list-student/list-student.com
 import { LoginStudentComponent } from './components/login-student/login-student.component';
 import { RegistrationStudentComponent } from './components/registration-student/registration-student.component';
 //
-//client module
+//client module to access data
 import { HttpClientModule } from '@angular/common/http';
+//reactive forms module for (add)
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
