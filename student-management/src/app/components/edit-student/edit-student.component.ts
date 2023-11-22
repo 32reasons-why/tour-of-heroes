@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 //lib
 import { StudentsService } from 'src/app/students.service';
-
+//rout
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-edit-student',
   templateUrl: './edit-student.component.html',
@@ -11,31 +12,23 @@ import { StudentsService } from 'src/app/students.service';
 })
 export class EditStudentComponent {
 
-  constructor(private student:StudentsService){}
+  constructor(private student:StudentsService, private router:ActivatedRoute){}
+
+
   editStudent = new FormGroup({
     name: new FormControl( '' ),
     email: new FormControl( '' )
   });
 
   ngOnInit(): void {
-    
+    console.log( this.router.snapshot.params) 
   }
 
   //property for alert msg
   message: boolean = false;
   //mmethod for saving data
-  SaveData(){
-    //console.log(this.addStudent.value);
-    this.student.saveStudentData(this.editStudent.value).subscribe((result)=>{
-      //console.log(result)
-
-      //display alert after submit
-      this.message = true;
-
-      //clear place holders
-      this.editStudent.reset({});
-
-    });
+  updateData(){
+    
   }
 
   //remove message

@@ -1,34 +1,14 @@
 {
   "Students": [
     {
-      "id": 1,
+      "id": 9809225152080,
       "name": "Lumpik",
       "email": "lumpik@gmail.com"
     },
     {
-      "id": 3,
-      "name": "Izwe",
-      "email": "izwe@gmail.com"
-    },
-    {
-      "name": "management",
-      "email": "management@gmail.com",
-      "id": 5
-    },
-    {
-      "name": "lebza",
-      "email": "lebza@nyiks.com",
-      "id": 6
-    },
-    {
-      "name": "Sanza",
-      "email": "dilo@imp.com",
-      "id": 8
-    },
-    {
-      "name": "bob",
-      "email": "bob@bld.com",
-      "id": 9
+      "name": "lambo",
+      "email": "lamb@gmail.com",
+      "id": 9809225152081
     }
   ]
 }
