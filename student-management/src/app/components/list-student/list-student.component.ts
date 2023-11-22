@@ -28,4 +28,14 @@ export class ListStudentComponent implements OnInit{
     });
   }
 
+  //remove a student from db
+  deleteStudent(student_id: any){
+    //console.log(student_id);
+    this.student.deleteStudent(student_id).subscribe((result)=>{
+      //console.log(result);
+      //to refresh call ngoninit
+      this.ngOnInit();
+    })
+
+  }
 }

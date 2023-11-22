@@ -1,1 +1,22 @@
-<p>edit-student works!</p>
+<h3>Add Student/s</h3>
+
+<!-- alert -->
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong> Student Updated Successfully
+    <button (click)="removeMsg()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
+  </div>
+<!-- form -->
+<form [formGroup] = "editStudent" (ngSubmit)="SaveData()">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Enter Names" formControlName="name">
+      </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="Enter Email" formControlName="email">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+

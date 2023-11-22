@@ -13,7 +13,10 @@
         <th scope="row">{{item.id}}</th>
         <td>{{item.name}}</td>
         <td>{{item.email}}</td>
-
+        <td>
+          <button (click)="deleteStudent(item.id)">delete</button>
+          <a routerLink="/edit/{{item.id}}">edit</a>
+        </td>
       </tr>
     </tbody>
   </table>

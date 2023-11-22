@@ -6,19 +6,9 @@
       "email": "lumpik@gmail.com"
     },
     {
-      "id": 2,
-      "name": "Simon",
-      "email": "simon@gmail.com"
-    },
-    {
       "id": 3,
       "name": "Izwe",
       "email": "izwe@gmail.com"
-    },
-    {
-      "name": "simple",
-      "email": "simple@gmail.com",
-      "id": 4
     },
     {
       "name": "management",
@@ -31,18 +21,13 @@
       "id": 6
     },
     {
-      "name": "Loki",
-      "email": "loks@gm.com",
-      "id": 7
-    },
-    {
       "name": "Sanza",
       "email": "dilo@imp.com",
       "id": 8
     },
     {
-      "name": "mlin",
-      "email": "lind@ff.com",
+      "name": "bob",
+      "email": "bob@bld.com",
       "id": 9
     }
   ]

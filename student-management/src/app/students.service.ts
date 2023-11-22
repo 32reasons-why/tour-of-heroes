@@ -27,4 +27,10 @@ export class StudentsService {
 
     return this.http.post(this.url, data);
   }
+  //method to delete data
+  deleteStudent(id: any){
+    console.log(id)
+
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }
