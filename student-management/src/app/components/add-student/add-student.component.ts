@@ -24,11 +24,25 @@ export class AddStudentComponent implements OnInit{
     
   }
 
+  //property for alert msg
+  message: boolean = false;
   //mmethod for saving data
   SaveData(){
     //console.log(this.addStudent.value);
     this.student.saveStudentData(this.addStudent.value).subscribe((result)=>{
-      console.log(result)
+      //console.log(result)
+
+      //display alert after submit
+      this.message = true;
+
+      //clear place holders
+      this.addStudent.reset({});
+
     });
+  }
+
+  //remove message
+  removeMsg(){
+    this.message = false;
   }
 }

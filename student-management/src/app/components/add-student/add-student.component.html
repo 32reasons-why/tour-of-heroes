@@ -1,9 +1,9 @@
 <h3>Add Student/s</h3>
 
 <!-- alert -->
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+<div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong> Student Added Successfully
+    <button (click)="removeMsg()" type="button" data-bs-dismiss="alert" aria-label="Close">X</button>
   </div>
 <!-- form -->
 <form [formGroup] = "addStudent" (ngSubmit)="SaveData()">
