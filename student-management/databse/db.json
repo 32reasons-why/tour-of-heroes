@@ -1,14 +1,9 @@
 {
   "Students": [
     {
-      "id": 9809225152080,
-      "name": "Lumpik",
-      "email": "lumpik@gmail.com"
-    },
-    {
-      "name": "lambo",
-      "email": "lamb@gmail.com",
-      "id": 9809225152081
+      "name": "myselfer",
+      "email": "myself@yahoo.com",
+      "id": 1
     }
   ]
 }
