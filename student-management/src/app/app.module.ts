@@ -14,6 +14,8 @@ import { RegistrationStudentComponent } from './components/registration-student/
 import { HttpClientModule } from '@angular/common/http';
 //reactive forms module for (add)
 import { ReactiveFormsModule } from '@angular/forms';
+//datatables modules
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
